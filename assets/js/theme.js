@@ -811,7 +811,7 @@ jQuery(document).ready(function(){
       dataType: "json",
       success: formSuccess,
       error: formFailure
-  });
+    });
     event.preventDefault();
   }
   if ($("#contact-form").length > 0){
