@@ -805,7 +805,7 @@ jQuery(document).ready(function(){
   var formSubmit = function(event){
     var message = $(event.currentTarget).find("#message").val();
     $.ajax({
-      url: "//formspree.io/" + site_email,
+      url: "//formspree.io/" + config.site_email,
       method: "POST",
       data: {message: message},
       dataType: "json",
