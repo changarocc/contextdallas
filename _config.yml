@@ -2,10 +2,10 @@
 
 # Site Settings
 title: 						"Context Dallas"
-email: 						"support@ecko.me"
+email: 						"info@contextdallas.com"
 description: 				"Astro is a content focused responsive theme for the Jekyll blogging platform. Available for purchase at ThemeForest.net."
 baseurl: 					""
-url: 						"http://contextdallas.com"
+url: 						"http://www.contextdallas.com"
 logourl: 					"/assets/img/bloglogo.jpg"
 fa-logo: 					"fa-bookmark-o"
 paginate: 					5
@@ -15,7 +15,7 @@ paginate: 					5
 author_name: 				"Walter Higgins"
 author_url: 				"http://www.contextdallas.com"
 author_bio: 				"Walter Higgins built a career and reputation by breaking the rules. Harvey's shoot-from-the-hip style has made him an effective lawyer and a slick character."
-author_email: 				"support@ecko.me"
+author_email: 				"changarocc@gmail.com"
 author_image: 				"/assets/img/authorimage.jpg"
 
 
@@ -51,3 +51,7 @@ sass:
 # Build Settings
 markdown: 					kramdown
 permalink: 					pretty
+
+#jekyll-assets plugin
+assets:
+  # js_compressor:  uglifier

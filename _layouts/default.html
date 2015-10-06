@@ -36,10 +36,12 @@
         'analytics_id': '{{ site.theme_analytics_id }}',
         'analytics_domain': '{{ site.theme_analytics_domain }}',
         'readingtime': {{ site.theme_reading_time }},
-        'autoload_comments': {{ site.theme_autoload_comments }}
+        'autoload_comments': {{ site.theme_autoload_comments }},
+        'site_email': '{{ site.email }}'
       };
     </script>
-    <script async type="text/javascript" src="{{ "/assets/js/theme.min.js" | prepend: site.baseurl }}"></script>
+
+    {% javascript theme %}
 
   </body>
 </html>

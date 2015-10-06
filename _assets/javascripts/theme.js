@@ -75,9 +75,9 @@
 })( window.jQuery || window.Zepto );
 
 ;(function ($, window, document, undefined) {
-  
+
   var pluginName = "readingTime";
-  
+
   var defaults = {
     bubble: '#scrollbubble'
   };
@@ -709,13 +709,13 @@ jQuery(document).ready(function(){
 		var list = [];
 		$('.postbody h2').waypoint(function(direction) {
 			var e = $(this);
-			if(direction === "down"){ 
+			if(direction === "down"){
 				$('.index h2').fadeOut(function() {
 					list.push($('.index h2').text());
 	  				$(this).text($(e).text()).fadeIn();
 				});
 			};
-			if(direction === "up"){ 
+			if(direction === "up"){
 				$('.index h2').fadeOut(function() {
 	  				$(this).text(list.pop()).fadeIn();
 				});
@@ -727,7 +727,7 @@ jQuery(document).ready(function(){
 	// FITVIDS
 	jQuery(".postbody").fitVids();
   jQuery(".excerpt").fitVids();
-	
+
 
 	// COMMENTS
 	if(config.disqus_shortname != '' && config.disqus_shortname != null && config.disqus_shortname != undefined || config.google_comments == true){
@@ -748,7 +748,7 @@ jQuery(document).ready(function(){
 			(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
 			})();
 		}else if(config.google_comments == true){
-			
+
 			$.getScript("https://apis.google.com/js/plusone.js")
 			.done(function(script, textStatus ) {
 				gapi.comments.render('g-comments', {
@@ -789,7 +789,33 @@ jQuery(document).ready(function(){
   // FEATURE SCROLL
   $(".movedown").click(function(){
     $("html, body").animate({scrollTop: $('.cover').height()}, 1000);
-  }); 
-    
+  });
+
+  // CONTACT FORM
+
+  var formSuccess = function(){
+    $("#contact-form").addClass('is-submitted');
+    $("#form-success").addClass('is-active');
+  }
+
+  var formFailure = function(){
+    $("#form-error").addClass('is-active');
+  }
+
+  var formSubmit = function(event){
+    var message = $(event.currentTarget).find("#message").val();
+    $.ajax({
+      url: "//formspree.io/kason@kason.info",
+      method: "POST",
+      data: {message: message},
+      dataType: "json",
+      success: formSuccess,
+      error: formFailure
+  });
+    event.preventDefault();
+  }
+  if ($("#contact-form").length > 0){
+    $("#contact-form").submit(formSubmit);
+  }
 
 });

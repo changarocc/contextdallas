@@ -93,7 +93,8 @@ blockquote, q, cite{
 	}
 }
 
-input:not([type=submit]):not([type=file]){
+input:not([type=submit]):not([type=file]),
+textarea{
 	padding:8px 15px;
 	background:#fff;
 	border:2px solid #808080;
@@ -102,7 +103,9 @@ input:not([type=submit]):not([type=file]){
 	outline:0;
 	@include transition(all 0.2s ease-out);
 }
-input:not([type=submit]):not([type=file]):active, input:not([type=submit]):not([type=file]):focus{
+input:not([type=submit]):not([type=file]):active,
+input:not([type=submit]):not([type=file]):focus,
+textarea{
 	border:2px solid #2d75a2;
 }
 
@@ -252,4 +255,3 @@ footer{
 .cover header h2 a:hover {
 	opacity:1;
 }
-
