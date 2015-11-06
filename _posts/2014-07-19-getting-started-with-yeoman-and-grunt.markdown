@@ -1,12 +1,16 @@
 ---
 layout: post
-title:  "Getting Started with Yeoman & Grunt"
-date:   2014-07-19 04:10:49
+title: "Getting Started with Yeoman & Grunt"
+date: {}
 categories: Developer Workflow
-banner_image: "/media/desk.jpg"
+banner_image: /media/desk.jpg
 featured: true
 comments: true
+published: true
 ---
+
+
+#Super Title
 
 Why use Grunt? In one word: automation. The less work you have to do when performing repetitive tasks like minification, compilation, unit testing, linting, etc, the easier your job becomes. After you've configured it, a task runner can do most of that mundane work for you—and your team—with basically zero effort.
 
