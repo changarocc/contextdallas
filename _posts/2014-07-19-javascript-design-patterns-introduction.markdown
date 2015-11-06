@@ -1,6 +1,6 @@
 ---
-layout: post
-title: "JavaScript Design Patterns: Introduction Test"
+layout: default
+title: "JavaScript Design Patterns: Introduction Test Boom"
 date: 2014-07-19T04:07:49.000Z
 categories: Programming Patterns
 banner_image: /media/desert.jpg
