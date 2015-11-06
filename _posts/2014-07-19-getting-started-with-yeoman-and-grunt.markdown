@@ -3,11 +3,12 @@ layout: post
 title: "Getting Started with Yeoman & Grunt"
 date: {}
 categories: Developer Workflow
-banner_image: /media/desk.jpg
+banner_image: "/media/Pajama-Party1.jpg"
 featured: true
 comments: true
 published: true
 ---
+
 
 #Test
 
