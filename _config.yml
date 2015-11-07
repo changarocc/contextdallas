@@ -58,8 +58,9 @@ assets:
 
 # Prose Settings
 prose:
-  _posts:
-    - name: "date"
-      field: 
-        element: "hidden"
-        value: "CURRENT_DATETIME"
+  metadata:
+    _posts:
+      - name: "date"
+        field: 
+          element: "hidden"
+          value: "CURRENT_DATETIME"
