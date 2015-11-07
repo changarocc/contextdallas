@@ -3,14 +3,13 @@ date: 2014-07-19T04:07:49.000Z
 layout: post
 title: "JavaScript Design Patterns: Introduction"
 categories: Programming Patterns
-banner_image: /media/desert.jpg
+banner_image: "/media/Pajama-Party1.jpg"
 featured: true
 comments: true
 published: true
 ---
 
 #BOOM
-![Pajama-Party1.jpg]({{site.baseurl}}/media/Pajama-Party1.jpg)
 
 One of the most important aspects of writing maintainable code is being able to notice the recurring themes in that code and optimize them. This is an area where knowledge of design patterns can prove invaluable.
 
