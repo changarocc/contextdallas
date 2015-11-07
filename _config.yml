@@ -58,9 +58,12 @@ assets:
 
 # Prose Settings
 prose:
+  rooturl: "_posts"
+  siteurl: "http://www.contextdallas"
+  media: "media
   metadata:
     _posts:
       - name: "date"
         field: 
           element: "hidden"
-          value: "CURRENT_DATETIME"
+          value: CURRENT_DATETIME
