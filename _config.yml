@@ -8,7 +8,7 @@ baseurl: 					""
 url: 						"http://www.contextdallas.com"
 logourl: 					"/assets/img/bloglogo.jpg"
 fa-logo: 					"fa-bookmark-o"
-paginate: 					5
+//paginate: 					5
 
 
 # Author Settings
