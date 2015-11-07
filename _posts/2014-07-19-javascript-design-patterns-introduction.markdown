@@ -9,7 +9,8 @@ comments: true
 published: true
 ---
 
-
+#Boom
+hmmm
 One of the most important aspects of writing maintainable code is being able to notice the recurring themes in that code and optimize them. This is an area where knowledge of design patterns can prove invaluable.
 
 <!--more-->
