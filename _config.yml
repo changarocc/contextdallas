@@ -55,3 +55,11 @@ permalink: 					pretty
 #jekyll-assets plugin
 assets:
   # js_compressor:  uglifier
+
+# Prose Settings
+prose:
+  _posts:
+    - name: "date"
+      field: 
+        element: "hidden"
+        value: "CURRENT_DATETIME"
