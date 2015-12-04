@@ -56,6 +56,10 @@ permalink: 					pretty
 assets:
   # js_compressor:  uglifier
 
+gems :
+  - jekyll-paginate
+
+
 # Prose Settings
 prose:
   rooturl: '_posts'
@@ -64,6 +68,6 @@ prose:
   metadata:
     _posts:
       - name: "date"
-        field: 
+        field:
           element: "hidden"
           value: CURRENT_DATETIME
